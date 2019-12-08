@@ -13,7 +13,6 @@ def load_library (file)
     h[:get_meaning][emoticons[1]] = meaning
     h[:get_emoticon][emoticons[0]] = emoticons[1]
   end
-  pp h
   h
 end
 
