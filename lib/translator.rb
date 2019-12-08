@@ -22,8 +22,7 @@ def get_japanese_emoticon (file, west_emo)
 
 
   emo = emo_lib[:get_emoticon].find{|west, japan| west == west_emo}
-  puts emo
-  if !emo
+  if emo.count == 0
     return "Sorry, that emoticon was not found"
   else
     japan_emo = emo[1]
