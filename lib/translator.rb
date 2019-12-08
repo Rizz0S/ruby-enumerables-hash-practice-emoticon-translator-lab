@@ -4,13 +4,13 @@ require "yaml"
 def load_library (file)
   emo_lib = YAML.load_file(file)
   h =  {
-    'get_meaning' => {}
-    'get_emoticon' =>  {}
+    "get_meaning" => {}
+    "get_emoticon" =>  {}
   }
 
   emo_lib.each do |meaning, emoticons|
-    h['get_meaning'][emoticons][1] = meaning
-    h['get_emoticon'][emoticons][0] = emoticons[1]
+    h["get_meaning"][emoticons][1] = meaning
+    h["get_emoticon"][emoticons][0] = emoticons[1]
   end
 
   h
