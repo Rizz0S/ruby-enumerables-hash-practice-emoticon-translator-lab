@@ -34,6 +34,11 @@ def get_english_meaning (file, japan_emo)
   if !(emo_lib[:get_meaning].collect{japan, west| japan}.include?(japan_emo))
     return "Sorry, that emoticon was not found"
   end
+
+  emo = emo_lib[:get_meaning].find{|japan, west| japan == japan_emo}
+  west_meaning = emo[1]
+  west_meaning
+
 end
 
 #get_japanese_emoticon("./lib/emoticons.yml", "1231231")
