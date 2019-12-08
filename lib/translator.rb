@@ -35,4 +35,4 @@ def get_english_meaning (japan_emo)
   # code goes here
 end
 
-load_library("./lib/emoticons.yml")
+get_japanese_emoticon("./lib/emoticons.yml", ":)")
