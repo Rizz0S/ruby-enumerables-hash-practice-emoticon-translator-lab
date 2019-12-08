@@ -3,6 +3,12 @@ require "yaml"
 
 def load_library (file)
   YAML.load_file(file)
+  h =  {
+    :'get_meaning' => {}
+    :'get_emoticon' =>  {}
+  }
+
+
 end
 
 def get_japanese_emoticon (file, west_emo)
