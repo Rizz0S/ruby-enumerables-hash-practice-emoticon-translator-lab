@@ -13,7 +13,7 @@ def load_library (file)
     h[:'get_emoticon'][emoticons][0] = emoticons[1]
   end
 
-
+  h
 end
 
 def get_japanese_emoticon (file, west_emo)
