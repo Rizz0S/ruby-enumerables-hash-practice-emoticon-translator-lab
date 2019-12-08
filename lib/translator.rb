@@ -4,8 +4,8 @@ require "yaml"
 def load_library (file)
   emo_lib = YAML.load_file(file)
   h =  {
-    :'get_meaning' => {}
-    :'get_emoticon' =>  {}
+    'get_meaning' => {}
+    'get_emoticon' =>  {}
   }
 
   emo_lib.each do |meaning, emoticons|
