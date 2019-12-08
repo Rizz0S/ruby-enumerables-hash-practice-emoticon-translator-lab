@@ -25,7 +25,7 @@ def get_japanese_emoticon (file, west_emo)
 
   emo = emo_lib[:get_emoticon].find{|west, japan| west == west_emo}
   japan_emo = emo[1]
-  puts japan_emo
+  japan_emo
 end
 
 def get_english_meaning (japan_emo)
