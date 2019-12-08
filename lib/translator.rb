@@ -8,7 +8,7 @@ end
 def get_japanese_emoticon (file, west_emo)
   emo_lib = load_library(file)
 
-  japan_emo = emo_lib.each_value {|value| value[1]}
+  japan_emo = emo_lib.find{|meaning, emoticons| emoticons[0] == west_emo}[1]
 
 end
 
