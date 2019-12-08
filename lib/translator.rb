@@ -28,7 +28,7 @@ def get_japanese_emoticon (file, west_emo)
   else
     japan_emo = emo[1]
   end
-
+  puts japan_emo
 end
 
 def get_english_meaning (japan_emo)
