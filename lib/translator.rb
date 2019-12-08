@@ -27,6 +27,7 @@ def get_japanese_emoticon (file, west_emo)
     return "Sorry, that emoticon was not found"
   else
     japan_emo = emo[1]
+  end
 
 end
 
