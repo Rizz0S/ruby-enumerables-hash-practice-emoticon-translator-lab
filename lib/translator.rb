@@ -10,7 +10,7 @@ def get_japanese_emoticon (file, west_emo)
 
   japan_emo = emo_lib.find{|meaning, emoticons| emoticons[0] == west_emo}.last[1]
 
-  if !japan_emo
+  if !(japan_emo)
     return "Sorry, that emoticon was not found"
   end
   japan_emo
