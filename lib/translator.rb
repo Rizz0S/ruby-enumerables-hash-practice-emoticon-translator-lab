@@ -20,8 +20,7 @@ def get_japanese_emoticon (file, west_emo)
   emo_lib = load_library(file)
 
   if !(emo_lib[:get_emoticon].collect{|west, japan| west}.include?(west_emo))
-    puts "asdfasdfa"
-      return "Sorry, that emoticon was not found"
+    return "Sorry, that emoticon was not found"
   end
 
   emo = emo_lib[:get_emoticon].find{|west, japan| west == west_emo}
