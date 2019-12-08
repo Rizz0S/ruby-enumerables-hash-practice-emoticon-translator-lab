@@ -8,7 +8,10 @@ def load_library (file)
     :'get_emoticon' =>  {}
   }
 
-
+  emo_lib.each do |meaning, emoticons|
+    h[:'get_meaning'][emoticons][1] = meaning
+    h[:'get_emoticon'][emoticons][0]  = emoticons[1]
+  end
 
 
 end
